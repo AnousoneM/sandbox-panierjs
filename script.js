@@ -6,6 +6,6 @@ basketBtnArray.forEach(function(button){
 });
 
 function addToBasket(){
-    console.log(this)
-    console.log(this.id)
+    
+    console.log(this.dataset.ref);
 }
