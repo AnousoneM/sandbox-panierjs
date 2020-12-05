@@ -14,31 +14,10 @@
 
 <body id="body">
 
-    <div class="card" style="width: 18rem;">
-        <img src="assets/img/tournevis_001.jpg" class="card-img-top" alt="tournevis">
-        <div class="card-body">
-            <p class="card-title h5">Tournevis Turquoise</p>
-            <p class="card-text">Ref: 0001</p>
-            <p class="card-text">Tournevis ergonomique et très joli.</p>
-            <p class="card-text">5,50€</p>
-            <!-- je créé mes datas pour récupérer plus facilement mes valeurs -->
-            <a id="alexis" data-name="Tournevis Turquoise" data-ref="0001" data-price="5.50"
-                data-img="tournevis_001.jpg" href="#" class="btn btn-primary add-basket-btn" data-toggle="modal"
-                data-target="#myModal">Ajouter panier</a>
-        </div>
-    </div>
+    <div id="products" class="row">
 
-    <div class="card" style="width: 18rem;">
-        <img src="assets/img/tournevis_002.jpg" class="card-img-top" alt="tournevis">
-        <div class="card-body">
-            <p class="card-title h5">Tournevis Rouge</p>
-            <p class="card-text">Ref: 0002</p>
-            <p class="card-text">Tournevis rouge transportable.</p>
-            <p class="card-text">50€</p>
-            <a id="cristina" data-name="Tournevis Rouge" data-ref="0002" data-price="50"
-                data-img="tournevis_002.jpg" href="#" class="btn btn-primary add-basket-btn" data-toggle="modal"
-                data-target="#myModal">Ajouter panier</a>
-        </div>
+        <!-- ici nos produits via notre catalog en js -->
+
     </div>
 
     <!-- Modal dynamique en fonction du click -->
@@ -46,17 +25,16 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="modalTitle"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body">
-                    MY MODAL
+                <div id="modalDescription" class="modal-body">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary">Ajouter panier</button>
                 </div>
             </div>
         </div>
